@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f1d2e;
+  color: #e0def4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+h1 {
+  text-decoration: underline;
+}
+
+.choice {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #6e6a86;
+  padding: 10px 50px;
+  font-size: 30px;
+  border: 2px solid #f6c177;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #393552;
+}
+.score-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  margin-top: 20px;
+}
+.score-section p {
+  color: #eb6f92;
+}
+
+.score-section p span {
+  color: #f6c177;
+}
