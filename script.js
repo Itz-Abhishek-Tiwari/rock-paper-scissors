@@ -38,7 +38,6 @@ function playRound(computerSelection, playerSelection) {
     } else {
       document.querySelector(".result").textContent = ` You Loss`;
     }
-
     finalCount();
   }
 }
@@ -61,27 +60,8 @@ document.querySelector(".scissorsBtn").addEventListener("click", () => {
   playRound(computerSelection, "scissors");
 });
 
-// Play Game Five Time
-/*
-function playGame() {
-  for (let i = 0; i < 5; i++) {
-    let computerSelection = getComputerChoice();
-    console.log(computerSelection);
-    let playerSelection = prompt("enter chpice");
-    playRound(computerSelection, playerSelection);
-  }
-}
-playGame();
-*/
-
 // Check If you have  more or equal to 3 count so it can delater you win or lose.
 function finalCount() {
-  //   if (count >= 3) {
-  //     console.log(`Your Final count is: ${count} You Won!`);
-  //   } else if (count <= 2) {
-  //     console.log(`Your Final count is: ${count} You Lose!`);
-  //   }
-
   switch (count) {
     case 0:
     case 1:
@@ -97,7 +77,6 @@ function finalCount() {
       break;
     }
   }
-
   count = 0;
   roundPlayed = 0;
 }
